@@ -1,0 +1,41 @@
+#container {
+}
+
+#card {
+  padding: 1em;
+  max-width: 600px;
+  margin: 5rem auto;
+  text-align: center;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.people {
+  display: flex;
+}
+.info {
+  margin: auto 1rem;
+}
+.people {
+  margin: 2em 0;
+}
+
+#btn {
+  margin: 0 auto;
+  width: 80%;
+  line-height: 2.5em;
+  background-color: #f28ab2;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
