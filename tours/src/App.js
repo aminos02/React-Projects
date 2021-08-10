@@ -23,7 +23,7 @@ function App() {
       console.log(error);
     }
   };
-
+  const removeTour = (id) => setTours(tours.filter((tour) => tour.id !== id));
   return (
     <div id="container">
       <h1 id="title">Our Tours</h1>
@@ -34,13 +34,7 @@ function App() {
         <h1>No tour here</h1>
       ) : (
         tours.map((tour) => (
-          <Tour
-            key={tour.id}
-            name={tour.name}
-            info={tour.info}
-            image={tour.image}
-            price={tour.price}
-          ></Tour>
+          <Tour key={tour.id} {...tour} removeTour={removeTour}></Tour>
         ))
       )}
     </div>

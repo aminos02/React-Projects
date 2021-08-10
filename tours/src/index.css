@@ -27,6 +27,8 @@ body {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   width: 100%;
+  max-height: 300px;
+  object-fit: cover;
 }
 .description {
   margin: 0 2rem;
@@ -64,4 +66,13 @@ body {
 }
 .card {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.readMore {
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  color: hsl(205, 78%, 60%);
+  font-size: 1rem;
+  cursor: pointer;
+  padding-left: 0.25rem;
 }
