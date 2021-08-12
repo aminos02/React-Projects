@@ -160,7 +160,9 @@ Reviews
   border-radius: 5px;
   box-shadow: var(--light-shadow);
 }
-
+#container:hover {
+  box-shadow: var(--dark-shadow);
+}
 #img-circle {
   width: 130px;
   height: 130px;
