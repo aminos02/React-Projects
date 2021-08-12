@@ -148,12 +148,16 @@ Questions
   background-color: white;
   border-radius: 10px;
   display: flex;
+  justify-content: space-between;
   margin: 2rem auto;
   padding: 2rem 1rem;
 }
 #title {
-  width: 33%;
-  padding-right: 2em;
+  width: 30%;
+  text-align: center;
+}
+#title h3 {
+  line-height: 1.5;
 }
 #question-container {
   width: 65%;
@@ -161,7 +165,6 @@ Questions
 .question {
   border: 1px solid var(--clr-grey-8);
   padding: 1em;
-
   border-radius: 5px;
   box-shadow: var(--light-shadow);
   margin-bottom: 1.5rem;
@@ -174,6 +177,10 @@ Questions
   justify-content: space-between;
   align-items: center;
 }
+.question-header h4 {
+  width: 80%;
+}
+
 .icon {
   cursor: pointer;
   border: none;
@@ -193,4 +200,18 @@ Questions
 p {
   margin-top: 1em;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  #title {
+    width: 90%;
+  }
+  #question-container {
+    width: 90%;
+  }
 }
